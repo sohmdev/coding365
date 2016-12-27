@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- https://github.com/twbs/bootstrap/issues/12852 -->
+        <!-- CDNs for Boostrap, jQuery, and Font Awesome (social media icons) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-        <title>Jeremy Roth's Portfolio</title>
+        <link rel="stylesheet" type="text/css"href="portfolio.css">
+        <title>SOHM Studio's Portfolio</title>
   </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- https://github.com/twbs/bootstrap/issues/12852 -->
+<!-- to collapse menu after link is chosen -->
 
- <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
+<script>
+$(document).on('click','.navbar-collapse.in',function(e) {
+
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+
+});
+</script>
+
+<!-- http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+<!-- to setup collapsable navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">SOHM Studios</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#about">About</a></li>
+        <li class="active"><a href="#home"><i class="icon-home icon-white"></i>Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
+<h3><span id="home"></span></h3>
+<!-- http://code.makery.ch/library/more-html-css/image-bootstrap/ -->
+<!-- About content -->
   <div class="container about">
-    <div class="row">
-      <div class="col-lg-8">
+    <img class="img-responsive center-block" src="ss.png" alt="SOHM Studios" width="200px">
+      <div class="jumbotron">
         <h3><span id="about"></span>About Example</h3>
         <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
-      </div>
-      <img class="img-responsive img-circle pull-right" src="http://www.w3schools.com/w3images/fjords.jpg" alt="fake about pic" width="304" height="236">
     </div>
   </div>
+
+<!-- http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+<!-- Portfolio content -->
   <div class="container portfolio">
+      <div class="jumbotron">
     <h3><span id="portfolio"></span>Portfolio Example</h3>
     <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
 
@@ -118,8 +156,13 @@
       </div>
     </div>
   </div>
+  </div>
+
+<!-- http://www.kodingmadesimple.com/2014/11/create-stylish-bootstrap-3-social-media-icons.html -->
+<!-- Contact content -->  
   <div class="container contact">
-    <h3><span id="contact"></span>ContactExample</h3>
+            <div class="jumbotron">
+    <h3><span id="contact"></span>Contact Example</h3>
     <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
     <div class="social">
 
@@ -133,40 +176,14 @@
 
         <li><a href="#"><i class="fa fa-lg fa-github"></i></a></li>
 
-        <li><a href="#"><i class="fa fa-lg fa-pinterest"></i></a></li>
-
         <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
 
-        <li><a href="#"><i class="fa fa-lg fa-flickr"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-vimeo-square"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-stack-overflow"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-dropbox"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-tumblr"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-dribbble"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-skype"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-stack-exchange"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-youtube"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-xing"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-rss"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-foursquare"></i></a></li>
-
-        <li><a href="#"><i class="fa fa-lg fa-youtube-play"></i></a></li>
       </ul>
     </div>
   </div>
-
+</div>
 </body>
 </html>
+
+<!-- http://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp -->
+<!-- spyscroll info --> 
