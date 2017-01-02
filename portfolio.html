@@ -10,6 +10,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" type="text/css"href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round" rel="stylesheet">
         <title>SOHM Studio's Portfolio</title>
   </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -28,6 +29,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
 <!-- http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
 <!-- to setup collapsable navbar -->
+<!-- http://fontawesome.io/cheatsheet/ -->
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -39,11 +42,11 @@ $(document).on('click','.navbar-collapse.in',function(e) {
       <a class="navbar-brand" href="#">SOHM Studios</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#home"><i class="icon-home icon-white"></i>Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+        <li><a href="#portfolio"><i class=" fa fa-folder-open" aria-hidden="true"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class=" fa fa-users" aria-hidden="true"></i> Contact</a></li>
       </ul>
     </div>
   </div>
@@ -55,8 +58,11 @@ $(document).on('click','.navbar-collapse.in',function(e) {
   <div class="container about">
     <img class="img-responsive center-block" src="ss.png" alt="SOHM Studios" width="200px">
       <div class="jumbotron">
-        <h3><span id="about"></span>About Example</h3>
-        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+        <h3><span id="about"></span>About:</h3>
+        <p>My name is Jeremy Roth. SOHM Studios is the umbrella under which my web and app developement will occur. This portfolio is 
+          a living document that will be updated overtime as my skills progress. I am currently working through Free Code Camp to 
+          improve my web developement skills.
+        </p>
     </div>
   </div>
 
@@ -64,8 +70,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 <!-- Portfolio content -->
   <div class="container portfolio">
       <div class="jumbotron">
-    <h3><span id="portfolio"></span>Portfolio Example</h3>
-    <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+    <h3><span id="portfolio"></span>Portfolio:</h3>
+    <p>Here are a few of the recent projects I have worked on.</p>
 
     <div class="row">
 
@@ -73,13 +79,15 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
         <div class="thumbnail">
 
-          <a href="/w3images/lights.jpg">
-            <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <a href="http://codepen.io/sohmdev/pen/dOzQde">
+            <img src="http://placehold.it/350x150" alt="Tribute" style="width:100%">
             <div class="caption">
-
-              <p>Lorem ipsum...</p>
-            </div>
-          </a>
+              <p>Tribute Page: Elon Musk</p>
+                            </div>
+              </a>
+              <div class="tech">
+              <p> Tech: HTML & CSS </p>
+              </div>
         </div>
       </div>
 
@@ -87,13 +95,16 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
         <div class="thumbnail">
 
-          <a href="/w3images/fjords.jpg">
-            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <a href="#">
+            <img src="http://placehold.it/350x150" alt="#" style="width:100%">
             <div class="caption">
 
-              <p>Lorem ipsum...</p>
+              <p>Project 2</p>
+                            </div>
+              </a>
+                            <div class="tech">
+              <p> Tech: HTML & CSS </p>
             </div>
-          </a>
         </div>
       </div>
 
@@ -101,13 +112,16 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
         <div class="thumbnail">
 
-          <a href="/w3images/fjords.jpg">
-            <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+          <a href="#">
+            <img src="http://placehold.it/350x150" alt="#" style="width:100%">
             <div class="caption">
 
-              <p>Lorem ipsum...</p>
+              <p>Project 3</p>
             </div>
           </a>
+                        <div class="tech">
+              <p> Tech: HTML & CSS </p>
+              </div>
         </div>
       </div>
     </div>
@@ -117,13 +131,16 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
         <div class="thumbnail">
 
-          <a href="/w3images/lights.jpg">
-            <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <a href="#">
+            <img src="http://placehold.it/350x150" alt="#" style="width:100%">
             <div class="caption">
 
-              <p>Lorem ipsum...</p>
+              <p>Project 4</p>
             </div>
           </a>
+                        <div class="tech">
+              <p> Tech: HTML & CSS </p>
+              </div>       
         </div>
       </div>
 
@@ -131,13 +148,16 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
         <div class="thumbnail">
 
-          <a href="/w3images/fjords.jpg">
-            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <a href="#">
+            <img src="http://placehold.it/350x150" alt="#" style="width:100%">
             <div class="caption">
 
-              <p>Lorem ipsum...</p>
+              <p>Project 5</p>
             </div>
           </a>
+                                  <div class="tech">
+              <p> Tech: HTML & CSS </p>
+              </div>
         </div>
       </div>
 
@@ -145,13 +165,16 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
         <div class="thumbnail">
 
-          <a href="/w3images/fjords.jpg">
-            <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+          <a href="#">
+            <img src="http://placehold.it/350x150" alt="#" style="width:100%">
             <div class="caption">
 
-              <p>Lorem ipsum...</p>
+              <p>Project 6</p>
             </div>
           </a>
+                                  <div class="tech">
+              <p> Tech: HTML & CSS </p>
+              </div>
         </div>
       </div>
     </div>
@@ -162,8 +185,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 <!-- Contact content -->  
   <div class="container contact">
             <div class="jumbotron">
-    <h3><span id="contact"></span>Contact Example</h3>
-    <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+    <h3><span id="contact"></span>Contact Me:</h3>
+    <p>I'd love to hear from you! Feel free to submit an inquery below, shoot me an email @ <a href="mailto: sohmdev@gmail.com">SOHMdev@gmail.com </a>, or follow me on social media using the link below.</p>
    <form> 
     <div class="form-group">
       <label for="name">Name:</label>
@@ -181,16 +204,18 @@ $(document).on('click','.navbar-collapse.in',function(e) {
       <label for="message">Message:</label>
       <textarea class="form-control" rows="5" id="message"></textarea>
     </div>
-<button type="submit" class="btn btn-default">Submit</button>
+<button type="submit" class="btn btn-default disabled">Submit</button>
+                                  <div class="tech">
+              <p> Use the social media links below to contact me! </p>
+              </div>
 </form>
 
     <div class="social">
       <ul>
-        <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
-        <li><a href="#"><i class="fa fa-lg fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/jeremy.roth.5" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/SOHMstudios" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+        <li><a href="https://github.com/sohmdev" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jeremy-roth-350260131" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
       </ul>
     </div>
   </div>

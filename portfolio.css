@@ -1,6 +1,14 @@
+.jumbotron h3 {
+        font-family: "Montserrat";
+    }
+ .jumbotron p {
+        font-family: "Varela Round";
+    }
+
 body {
   padding-top: 40px;
   height: 2500px;
+  background-image: url('footer_lodyas.png')
 }
 
 h3 {
@@ -10,6 +18,13 @@ h3 {
 h3 span {
   position: absolute;
   top: -130px;
+}
+
+.tech p {
+    font-style: italic;
+    font-size: small;
+    color: #0091D4;
+    text-align: center;
 }
 
 .social {
