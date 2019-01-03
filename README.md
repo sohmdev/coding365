@@ -1,6 +1,7 @@
 ## Week 1 Goals:
 
 On the week nights power through the Microsoft: DAT208x course - Introduction to Python for Data Science.
+
 On the weekend:
 - Figure out how to edit the sub title of this page
 - Remove boiler plate text on this page
