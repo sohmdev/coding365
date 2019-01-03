@@ -1,3 +1,13 @@
+## Week 1 Goals:
+
+On the week nights power through the Microsoft: DAT208x course - Introduction to Python for Data Science
+On the weekend:
+- Figure out how to edit the sub title of this page
+- Remove boiler plate text on this page
+- Look into using Google Colab for coding exercises
+- Wrap up DAT208x course
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/sohmdev/learningWebDev/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
